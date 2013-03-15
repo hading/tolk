@@ -46,6 +46,9 @@
                 <span class="key" title="<%= phrase.key %>"><%= params[:k].present? ?
                   highlight(h(truncate(phrase.key, :length => 100)), params[:k]) :
                   h(truncate(phrase.key, :length => 100)) %></span>
+		<% if phrase.key.start_with?('jsperanto') %>
+	        <em>JSperanto - use interpolation syntax "some fixed text __keyname__"</em>
+	      <% end %>
               </td>
             </tr>
           <% end %>

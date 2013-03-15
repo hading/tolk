@@ -47,6 +47,9 @@
                 <%= boolean_warning if phrase.translations.primary.boolean? -%>
               </div>
               <span class="key" title="<%= phrase.key %>"><%= truncate(phrase.key, :length => 100) %></span>
+	      <% if phrase.key.start_with?('jsperanto') %>
+	        <em>JSperanto - use interpolation syntax "some fixed text __keyname__"</em>
+	      <% end %>
             </td>
           </tr>
         <% end %>

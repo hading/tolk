@@ -5,9 +5,9 @@ Gem::Specification.new do |s|
   s.name        = 'tolk'
   s.version     = Tolk::VERSION
   s.summary     = 'Rails engine providing web interface for managing i18n yaml files'
-  s.description = 'Tolk is a web interface for doing i18n translations packaged as an engine for Rails applications.'
+  s.description = 'Tolk is a web interface for doing i18n translations packaged as an engine for Rails applications. Modified for Bibapp.'
 
-  s.authors = ['David Heinemeier Hansson', 'Piotr Sarnacki', 'Emilio Tagua', 'Thomas Darde']
+  s.authors = ['David Heinemeier Hansson', 'Piotr Sarnacki', 'Emilio Tagua', 'Thomas Darde', 'Howard Ding']
   s.email = 'david@loudthinking.com'
   s.homepage = 'http://github.com/tolk/tolk'
 

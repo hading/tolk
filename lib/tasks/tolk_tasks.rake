@@ -7,7 +7,7 @@ namespace :tolk do
 
   desc "Add database tables, copy over the assets, and import existing translations"
   task :setup => :environment do
-    system 'rails g tolk:install'
+#    system 'rails g tolk:install'
 
     Rake::Task['db:migrate'].invoke
     Rake::Task['tolk:sync'].invoke
